@@ -701,12 +701,15 @@ function App() {
                     themeowmanor.tmm26@gmail.com
                   </div>
                 </div>
-                <div className="rounded-2xl border border-black/10 bg-white/70 px-4 py-3">
+                <a
+                  className="block rounded-2xl border border-black/10 bg-white/70 px-4 py-3 transition hover:bg-white"
+                  href="tel:+917795277272"
+                >
                   <div className="text-xs text-slate-500">Phone</div>
                   <div className="font-semibold text-slate-950">
                     +91 7795277272
                   </div>
-                </div>
+                </a>
                 <a
                   className="block rounded-2xl border border-black/10 bg-white/70 px-4 py-3 transition hover:bg-white"
                   href="https://www.google.com/maps/search/?api=1&query=Flat%20no.%20309%2C%203rd%20floor%2C%20Sai%20Indraprastha%20Apartment%2C%20Rachenahalli%20Main%20Rd%2C%20Sinthan%20Nagar%2C%20Thanisandra%2C%20Bengaluru%2C%20Karnataka%20560077"
