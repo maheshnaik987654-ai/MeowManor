@@ -763,7 +763,7 @@ function App() {
       </footer>
 
       <a
-        href="https://wa.me/917795277272?text=Hi%20The%20Meow%20Manor%2C%20I%20want%20to%20book%20a%20stay%20for%20my%20cat.%20Please%20share%20availability%20and%20pricing."
+        href="https://wa.me/917795277272?text=Hi%2C%20Wanted%20to%20enquire%20on%20the%20cat%20boarding%20services%20you%20provide%3F"
         target="_blank"
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
