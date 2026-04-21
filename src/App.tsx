@@ -541,6 +541,69 @@ function App() {
           </div>
         </section>
 
+        <section id="terms" className="mx-auto max-w-6xl px-4 pb-14">
+          <div className="rounded-3xl border border-black/10 bg-white/70 p-8 shadow-sm md:p-10">
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
+              Cat Boarding – Terms &amp; Conditions (Short Version)
+            </h2>
+            <p className="mt-2 text-sm text-slate-700">
+              By booking with us, you agree to the following:
+            </p>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {[
+                {
+                  t: '1. Vaccination & Health',
+                  d: 'All cats must be healthy, vaccinated, dewormed, and free from fleas/ticks. We reserve the right to refuse admission if these conditions are not met.',
+                },
+                {
+                  t: '2. Food & Diet',
+                  d: 'Owners may provide their cat’s food. If not provided, meals will be charged as per our pricing. Special diet instructions must be clearly mentioned.',
+                },
+                {
+                  t: '3. Behavior Disclosure',
+                  d: 'Owners must inform us of any aggression, anxiety, or special behavior. We may decline cats that pose a risk to themselves or others.',
+                },
+                {
+                  t: '4. Emergency Care',
+                  d: 'In case of illness or emergency, we will contact you immediately. If unreachable, we may seek veterinary care. All medical costs are the owner’s responsibility.',
+                },
+                {
+                  t: '5. Liability',
+                  d: 'We take utmost care of all cats. However, we are not liable for pre-existing health conditions, stress-related illness, or minor injuries due to normal cat behavior.',
+                },
+                {
+                  t: '6. Check-in / Check-out',
+                  d: 'Boarding is charged per day. Late pickups may incur additional charges.',
+                },
+                {
+                  t: '7. Cancellation Policy',
+                  d: 'Last-minute cancellations or no-shows may be subject to charges.',
+                },
+                {
+                  t: '8. Owner Consent',
+                  d: 'By booking our services, you confirm that all information provided is accurate and you agree to our full boarding policies.',
+                },
+              ].map((x) => (
+                <div
+                  key={x.t}
+                  className="rounded-3xl border border-black/10 bg-white/70 p-6"
+                >
+                  <div className="text-sm font-semibold text-slate-950">{x.t}</div>
+                  <div className="mt-2 text-sm leading-relaxed text-slate-700">
+                    {x.d}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6 rounded-2xl border border-dashed border-black/20 bg-white/60 p-4 text-sm text-slate-700">
+              📌 Full agreement and detailed terms are shared at the time of
+              booking.
+            </div>
+          </div>
+        </section>
+
         <section id="contact" className="mx-auto max-w-6xl px-4 pb-20">
           <div className="grid gap-6 md:grid-cols-2">
             <div className="rounded-3xl border border-black/10 bg-white/70 p-8 shadow-sm">
