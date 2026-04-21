@@ -21,32 +21,14 @@ const faqs: FaqItem[] = [
   },
 ]
 
-const interiorGallery = [
-  {
-    title: 'Bright & airy suites',
-    note: 'Calm lighting, clean spaces, and cozy corners.',
-    src: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1400&q=80',
-  },
-  {
-    title: 'Enrichment play areas',
-    note: 'Climbing, scratching, and supervised exploration.',
-    src: 'https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=1400&q=80',
-  },
-  {
-    title: 'Comfort-first details',
-    note: 'Soft bedding, fresh air, and a peaceful vibe.',
-    src: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1400&q=80',
-  },
-]
-
 function classNames(...v: Array<string | false | undefined>) {
   return v.filter(Boolean).join(' ')
 }
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#fbf6f2] text-slate-900">
-      <header className="sticky top-0 z-50 border-b border-black/5 bg-[#fbf6f2]/80 backdrop-blur">
+    <div className="min-h-screen bg-[#C9967A] text-slate-900">
+      <header className="sticky top-0 z-50 border-b border-black/5 bg-[#C9967A]/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
           <a href="#top" className="flex items-center gap-3">
             <img
@@ -65,9 +47,6 @@ function App() {
           <nav className="hidden items-center gap-6 text-sm text-slate-700 md:flex">
             <a className="hover:text-slate-950" href="#benefits">
               Benefits
-            </a>
-            <a className="hover:text-slate-950" href="#interiors">
-              Interiors
             </a>
             <a className="hover:text-slate-950" href="#pricing">
               Pricing
@@ -106,10 +85,13 @@ function App() {
               </h1>
 
               <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-700">
-                At <span className="font-semibold">The Meow Manor</span>, we
-                provide a clean, quiet and enriching environment—designed for
-                feline comfort. From gentle handling to daily routine care, we
-                treat every guest like family.
+                A cozy, cage-free stay for your cats—just like home ❤️
+                <br />
+                <br />
+                Our cat boarding is set in a peaceful 2BHK space where your cats
+                are free to relax, explore, and play without the stress of cages.
+                We have two separate rooms: one with extra amenities for a more
+                premium stay, and another comfortable space for regular boarding.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-3">
@@ -131,7 +113,7 @@ function App() {
                 <div>
                   <dt className="text-xs font-medium text-slate-600">Pricing</dt>
                   <dd className="mt-1 text-sm font-semibold text-slate-950">
-                    ₹400–₹500 / night
+                    ₹400–₹700 / night
                   </dd>
                 </div>
                 <div>
@@ -166,14 +148,14 @@ function App() {
                       The Meow Manor
                     </div>
                     <div className="text-xs text-slate-600">
-                      Cat boarding suites • Gentle care
+                      Cat boarding rooms • Gentle care
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-6 grid gap-3">
                   {[
-                    { k: 'Sanitized suites', v: 'Daily cleaning & fresh setup' },
+                    { k: 'Sanitized rooms', v: 'Daily cleaning & fresh setup' },
                     { k: 'Routine care', v: 'Feeding, water, litter, meds' },
                     { k: 'Enrichment', v: 'Playtime, scratching, calm music' },
                     { k: 'Safety first', v: 'Secure spaces & monitoring' },
@@ -205,20 +187,10 @@ function App() {
         </section>
 
         <section id="benefits" className="mx-auto max-w-6xl px-4 py-14">
-          <div className="flex flex-col gap-2">
-            <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
-              What your cat gets at The Meow Manor
-            </h2>
-            <p className="max-w-2xl text-slate-700">
-              A thoughtfully designed stay—focused on comfort, hygiene and
-              low-stress handling.
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                title: 'Calm, cat-friendly suites',
+                title: 'Calm, cat-friendly rooms',
                 desc: 'Quiet zones, soft bedding, and hiding spots for security.',
               },
               {
@@ -255,82 +227,129 @@ function App() {
               </div>
             ))}
           </div>
-        </section>
 
-        <section id="interiors" className="mx-auto max-w-6xl px-4 pb-14">
-          <div className="rounded-3xl border border-black/10 bg-white/60 p-6 shadow-sm md:p-10">
-            <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-              <div>
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
-                  Interior inspiration
-                </h2>
-                <p className="mt-1 max-w-2xl text-slate-700">
-                  A modern, warm aesthetic—easy to clean, calming for cats, and
-                  comfortable for long stays.
-                </p>
+          <div className="mt-10">
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
+              What your cat gets at The Meow Manor
+            </h2>
+            <p className="mt-2 max-w-3xl text-slate-700">
+              A thoughtfully designed stay—focused on comfort, hygiene and
+              low-stress handling.
+            </p>
+          </div>
+
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
+            <div className="rounded-3xl border border-black/10 bg-white/70 p-6 shadow-sm md:col-span-2">
+              <div className="text-sm font-semibold text-slate-950">
+                Feeding &amp; personalized care
               </div>
-              <div className="text-xs text-slate-500">
-                Images via Unsplash for inspiration
+              <div className="mt-2 space-y-3 text-sm leading-relaxed text-slate-700">
+                <p>
+                  We provide structured and personalized feeding care based on
+                  each cat’s established meal routine. Owners are encouraged to
+                  share detailed feeding schedules, portion guidelines, and
+                  dietary preferences to ensure continuity and comfort.
+                </p>
+                <p>
+                  Homemade meals are available upon request, and we accommodate
+                  customized diets, including special nutritional requirements
+                  and medication administration.
+                </p>
+                <p className="rounded-2xl border border-dashed border-black/20 bg-white/60 p-4 text-xs text-slate-600">
+                  Disclaimer: Any additional food items, specialty diets, or
+                  ingredients procured on behalf of the owner will be billed
+                  separately and are not included in the standard boarding fee.
+                </p>
               </div>
             </div>
 
-            <div className="mt-7 grid gap-4 md:grid-cols-3">
-              {interiorGallery.map((x) => (
-                <figure
-                  key={x.title}
-                  className="overflow-hidden rounded-3xl border border-black/10 bg-white shadow-sm"
-                >
-                  <img
-                    src={x.src}
-                    alt={x.title}
-                    className="h-52 w-full object-cover"
-                    loading="lazy"
-                  />
-                  <figcaption className="p-4">
-                    <div className="text-sm font-semibold text-slate-950">
-                      {x.title}
-                    </div>
-                    <div className="mt-1 text-xs text-slate-600">{x.note}</div>
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="rounded-3xl border border-black/10 bg-white/70 p-6 shadow-sm">
+              <div className="text-sm font-semibold text-slate-950">
+                Boarding requirements
+              </div>
+              <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                {[
+                  'Vaccinations must be up to date',
+                  'Cats must be dewormed',
+                  'Tick/Flea treatment must be up to date',
+                  'Cats should be healthy and fit for boarding',
+                  'Owners must inform us of any medical conditions or special care needs',
+                  'Full disclosure of medical history and special care instructions',
+                ].map((x) => (
+                  <li key={x} className="flex items-start gap-3">
+                    <span className="mt-2 inline-block h-2 w-2 rounded-full bg-rose-400" />
+                    <span>{x}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-4 rounded-2xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white">
+                Your cat’s comfort, safety, and happiness are our top priorities.
+              </div>
+            </div>
+
+            <div className="rounded-3xl border border-black/10 bg-gradient-to-br from-rose-200/70 via-amber-100/70 to-white p-6 shadow-sm md:col-span-3">
+              <div className="text-sm font-semibold text-slate-950">
+                Say hello to our brand ambassadors—Loki &amp; Veera 🐱✨
+              </div>
+              <div className="mt-2 text-sm leading-relaxed text-slate-700">
+                These two brothers run the house (we just manage it 😄)
+              </div>
+              <div className="mt-4 grid gap-3 md:grid-cols-2">
+                <div className="rounded-3xl border border-black/10 bg-white/70 p-5">
+                  <div className="text-sm font-semibold text-slate-950">
+                    🐾 Loki
+                  </div>
+                  <div className="mt-1 text-sm text-slate-700">
+                    the mischievous cuddle buddy
+                  </div>
+                </div>
+                <div className="rounded-3xl border border-black/10 bg-white/70 p-5">
+                  <div className="text-sm font-semibold text-slate-950">
+                    🐾 Veera
+                  </div>
+                  <div className="mt-1 text-sm text-slate-700">
+                    the sweet, calm explorer
+                  </div>
+                </div>
+              </div>
+              <div className="mt-4 text-sm leading-relaxed text-slate-700">
+                They make sure every guest cat feels welcome, comfortable, and
+                never lonely. From playtime zoomies to chill nap vibes—they set
+                the mood here 💛
+              </div>
             </div>
           </div>
         </section>
 
         <section id="pricing" className="mx-auto max-w-6xl px-4 pb-14">
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-3xl border border-black/10 bg-white/70 p-8 shadow-sm">
-              <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
-                Simple pricing
-              </h2>
-              <p className="mt-2 text-slate-700">
-                Transparent rates with premium care included.
-              </p>
-
-              <div className="mt-6 rounded-3xl bg-slate-900 p-6 text-white">
-                <div className="text-xs text-white/70">Starting from</div>
-                <div className="mt-1 text-3xl font-semibold tracking-tight">
-                  ₹400–₹500
-                </div>
-                <div className="mt-1 text-sm text-white/80">
-                  per night (or per day, depending on stay duration)
-                </div>
-                <a
-                  href="#contact"
-                  className="mt-5 inline-flex w-full items-center justify-center rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-slate-900 hover:bg-white/90"
-                >
-                  Request availability
-                </a>
+          <div className="rounded-3xl border border-black/10 bg-white/70 p-8 shadow-sm">
+            <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+              <div>
+                <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
+                  Pricing
+                </h2>
+                <p className="mt-2 max-w-3xl text-slate-700">
+                  Clear stay plans, day care options, and meal plans—choose what
+                  suits your cat best.
+                </p>
               </div>
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center rounded-2xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
+              >
+                Request availability
+              </a>
+            </div>
 
-              <ul className="mt-6 space-y-3 text-sm text-slate-700">
+            <div className="mt-7 rounded-3xl border border-rose-200/70 bg-gradient-to-br from-rose-100/80 via-amber-100/60 to-white p-6">
+              <div className="text-sm font-semibold text-slate-950">
+                First Day Trial – ₹100 off
+              </div>
+              <ul className="mt-3 space-y-2 text-sm text-slate-700">
                 {[
-                  'Daily hygiene & suite refresh',
-                  'Feeding and fresh water',
-                  'Litter management',
-                  'Enrichment & supervised play',
-                  'Photo/video updates on request',
+                  'Only for new customers',
+                  'Valid for first booking only',
+                  'Meals charged separately (no discount on food)',
                 ].map((x) => (
                   <li key={x} className="flex items-start gap-3">
                     <span className="mt-2 inline-block h-2 w-2 rounded-full bg-rose-400" />
@@ -340,36 +359,160 @@ function App() {
               </ul>
             </div>
 
-            <div className="rounded-3xl border border-black/10 bg-white/60 p-8 shadow-sm">
-              <h3 className="text-base font-semibold text-slate-950">
-                Add-ons (optional)
-              </h3>
-              <p className="mt-2 text-sm text-slate-700">
-                Customize the stay based on your cat’s personality and needs.
-              </p>
-
-              <div className="mt-5 space-y-3">
-                {[
-                  { t: 'Extra enrichment session', d: 'More play & interaction time' },
-                  { t: 'Special diet handling', d: 'Measured portions & notes followed' },
-                  { t: 'Medication support', d: 'Administer as per instructions' },
-                  { t: 'Daily update package', d: 'Photo/video update every day' },
-                ].map((x) => (
-                  <div
-                    key={x.t}
-                    className="rounded-2xl border border-black/10 bg-white/70 px-4 py-3"
-                  >
-                    <div className="text-sm font-semibold text-slate-950">
-                      {x.t}
+            <div className="mt-7 grid gap-6 lg:grid-cols-3">
+              <div className="rounded-3xl border border-black/10 bg-white/70 p-6">
+                <div className="text-sm font-semibold text-slate-950">
+                  Non‑AC Room
+                </div>
+                <div className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">
+                  ₹399/night
+                </div>
+                <div className="mt-4 space-y-2 text-sm text-slate-700">
+                  {['Cage-free stay', 'Standard room'].map((x) => (
+                    <div key={x} className="flex items-start gap-3">
+                      <span className="mt-2 inline-block h-2 w-2 rounded-full bg-rose-400" />
+                      <span>{x}</span>
                     </div>
-                    <div className="mt-1 text-xs text-slate-600">{x.d}</div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
 
-              <div className="mt-7 rounded-2xl border border-dashed border-black/20 bg-white/60 p-4 text-sm text-slate-700">
-                Final pricing can vary slightly based on stay length and care
-                requirements.
+              <div className="rounded-3xl border border-black/10 bg-white/70 p-6">
+                <div className="text-sm font-semibold text-slate-950">
+                  AC Room Upgrade
+                </div>
+                <div className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">
+                  +₹50/night
+                </div>
+                <div className="mt-2 text-sm text-slate-700">
+                  Add on any stay plan.
+                </div>
+                <div className="mt-4 rounded-2xl border border-dashed border-black/20 bg-white/60 p-4 text-xs text-slate-600">
+                  Upgrade is subject to availability.
+                </div>
+              </div>
+
+              <div className="rounded-3xl border border-black/10 bg-white/70 p-6">
+                <div className="text-sm font-semibold text-slate-950">
+                  🌞 Day Care (Per Day)
+                </div>
+                <div className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">
+                  ₹299/day
+                </div>
+                <div className="mt-4 space-y-2 text-sm text-slate-700">
+                  {[
+                    'Up to 8–10 hours stay',
+                    'Playtime & supervision',
+                    'Litter access',
+                  ].map((x) => (
+                    <div key={x} className="flex items-start gap-3">
+                      <span className="mt-2 inline-block h-2 w-2 rounded-full bg-rose-400" />
+                      <span>{x}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-4 text-xs text-slate-600">
+                  Meals: add based on meal plan below.
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-7 rounded-3xl border border-black/10 bg-white/60 p-6">
+              <div className="text-sm font-semibold text-slate-950">🍽️ Meal Plans</div>
+
+              <div className="mt-4 grid gap-4 md:grid-cols-3">
+                <div className="rounded-3xl border border-black/10 bg-white/70 p-5">
+                  <div className="text-sm font-semibold text-slate-950">
+                    🥣 Basic Meal Plan – ₹119/day
+                  </div>
+                  <ul className="mt-2 space-y-2 text-sm text-slate-700">
+                    <li>Homemade wet food + Grain Zero dry food</li>
+                    <li>OR Felix wet food + Grain Zero dry food</li>
+                    <li className="text-slate-600">
+                      Treat: Grain Zero creamy treats
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="rounded-3xl border border-black/10 bg-white/70 p-5">
+                  <div className="text-sm font-semibold text-slate-950">
+                    🥣 Mid Meal Plan – ₹189/day
+                  </div>
+                  <ul className="mt-2 space-y-2 text-sm text-slate-700">
+                    <li>Smlyo wet food + Sheba dry food / Grain Zero dry food</li>
+                    <li>OR Sheba wet food + Sheba dry food / Grain Zero dry food</li>
+                    <li className="text-slate-600">
+                      Treat: Temptations creamy treat
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="rounded-3xl border border-black/10 bg-white/70 p-5">
+                  <div className="text-sm font-semibold text-slate-950">
+                    🥣 Premium Meal Plan – ₹219/day
+                  </div>
+                  <ul className="mt-2 space-y-2 text-sm text-slate-700">
+                    <li>Royal Canin wet food + N&amp;D Prime dry food</li>
+                    <li className="text-slate-600">Treats: Churu creamy treats</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-5 rounded-2xl border border-black/10 bg-white/70 p-5">
+                <div className="text-sm font-semibold text-slate-950">
+                  🍽️ Meal Customization
+                </div>
+                <ul className="mt-2 space-y-2 text-sm text-slate-700">
+                  <li>
+                    Owners can customize meals based on their cat’s preferences
+                  </li>
+                  <li>
+                    Special diets, homemade variations, and medication mixing
+                    supported
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mt-4 rounded-2xl border border-black/10 bg-white/70 p-5">
+                <div className="text-sm font-semibold text-slate-950">
+                  🥣 Special Breed Care Plan – ₹249/day
+                </div>
+                <div className="mt-2 text-sm text-slate-700">
+                  Suitable for Persian &amp; special breed cats.
+                </div>
+                <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                  {[
+                    'Breed-specific nutrition (e.g. Royal Canin Persian Adult)',
+                    'Premium wet food (based on availability)',
+                    'N&D Prime / equivalent high-quality dry food',
+                    'Supports coat health, digestion & picky eaters',
+                    'Customized feeding as per owner instructions',
+                  ].map((x) => (
+                    <li key={x} className="flex items-start gap-3">
+                      <span className="mt-2 inline-block h-2 w-2 rounded-full bg-rose-400" />
+                      <span>{x}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="mt-5 rounded-2xl border border-black/10 bg-white/70 p-5">
+                <div className="text-sm font-semibold text-slate-950">
+                  📌 Notes
+                </div>
+                <ul className="mt-2 space-y-2 text-sm text-slate-700">
+                  {[
+                    'Recommended for long-haired & sensitive breeds like Persian cat',
+                    'Additional charges may apply if specific products need to be specially purchased',
+                    'If cat parents provide their own food, meal charges will be reduced/waived accordingly',
+                    'Any special food or ingredients purchased by us on request will be charged separately',
+                  ].map((x) => (
+                    <li key={x} className="flex items-start gap-3">
+                      <span className="mt-2 inline-block h-2 w-2 rounded-full bg-rose-400" />
+                      <span>{x}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
@@ -423,7 +566,7 @@ function App() {
                   const body = encodeURIComponent(
                     `Name: ${name}\nPhone: ${phone}\nDates: ${dates}\n\nNotes:\n${notes}\n`,
                   )
-                  window.location.href = `mailto:themeowmanor@example.com?subject=${subject}&body=${body}`
+                  window.location.href = `mailto:themeowmanor.tmm26@gmail.com?subject=${subject}&body=${body}`
                 }}
               >
                 <div className="grid gap-4 md:grid-cols-2">
@@ -445,7 +588,7 @@ function App() {
                     <input
                       name="phone"
                       className="mt-1 w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm outline-none ring-rose-200 focus:ring-4"
-                      placeholder="+91 8520977320"
+                      placeholder="+91 7795277272"
                     />
                   </label>
                 </div>
@@ -481,11 +624,6 @@ function App() {
                 >
                   Send booking request
                 </button>
-
-                <p className="text-xs text-slate-500">
-                  This opens your email app. Replace the email/phone in the code
-                  with your real contact details.
-                </p>
               </form>
             </div>
 
@@ -497,22 +635,23 @@ function App() {
                 <div className="rounded-2xl border border-black/10 bg-white/70 px-4 py-3">
                   <div className="text-xs text-slate-500">Email</div>
                   <div className="font-semibold text-slate-950">
-                    themeowmanor@example.com
+                    themeowmanor.tmm26@gmail.com
                   </div>
                 </div>
                 <div className="rounded-2xl border border-black/10 bg-white/70 px-4 py-3">
                   <div className="text-xs text-slate-500">Phone</div>
                   <div className="font-semibold text-slate-950">
-                    +91 8520977320
+                    +91 7795277272
                   </div>
                 </div>
                 <div className="rounded-2xl border border-black/10 bg-white/70 px-4 py-3">
                   <div className="text-xs text-slate-500">Location</div>
                   <div className="font-semibold text-slate-950">
-                    Your City, India
+                    Flat no.309, 3rd floor, Sai Indraprastha Apartment
                   </div>
                   <div className="mt-1 text-xs text-slate-600">
-                    Add your full address after you decide it.
+                    Rachenahalli Main Rd, Sinthan Nagar, Thanisandra, Bengaluru,
+                    Karnataka 560077
                   </div>
                 </div>
               </div>
