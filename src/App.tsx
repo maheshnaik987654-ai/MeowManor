@@ -651,7 +651,7 @@ function App() {
                     <input
                       name="phone"
                       className="mt-1 w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm outline-none ring-rose-200 focus:ring-4"
-                      placeholder="+91 7795277272"
+                      placeholder="+91 7795377272"
                     />
                   </label>
                 </div>
@@ -703,11 +703,11 @@ function App() {
                 </div>
                 <a
                   className="block rounded-2xl border border-black/10 bg-white/70 px-4 py-3 transition hover:bg-white"
-                  href="tel:+917795277272"
+                  href="tel:+917795377272"
                 >
                   <div className="text-xs text-slate-500">Phone</div>
                   <div className="font-semibold text-slate-950">
-                    +91 7795277272
+                    +91 7795377272
                   </div>
                 </a>
                 <a
@@ -766,7 +766,7 @@ function App() {
       </footer>
 
       <a
-        href="https://wa.me/917795277272?text=Hi%2C%20Wanted%20to%20enquire%20on%20the%20cat%20boarding%20services%20you%20provide%3F"
+        href="https://wa.me/917795377272?text=Hi%2C%20Wanted%20to%20enquire%20on%20the%20cat%20boarding%20services%20you%20provide%3F"
         target="_blank"
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
